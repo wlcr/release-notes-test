@@ -21,8 +21,6 @@
 ## Branching Strategies
 Generally speaking most of our projects start out using a [Main Branch Workflow](#main-branch-workflow) and when needed (QA, Version freezes, etc) will shift into a [Develop Branch Workflow](#develop-branch-workflow). Read their following respective sections to learn more about each flow and when and how to use them.
 
-  *IMPORTANT: regardless of which branching strategy is being used, in order to keep our repos and our versioning more clear & better organized branch names should always correlate to a label used in the [`release.yml`](#step-2) file and that same label should be attatched to the PR for that branch. For example: `feature/hp-hero`*
-
 ### Main Branch Workflow
 In this branching strategy the main branch always contains production-ready code and all other branches will start from and merge back into the main branch. This is a strategy popularized by [github flow](https://githubflow.github.io/) that is well suited for small teams, CI/CD, & web projects. This workflow is how we typically start our projects.
 
@@ -102,6 +100,10 @@ Once you've setup your `release.yml` file and added the correlating [labels](htt
 
 ### Step 4
 After a PR has been merged, release notes should then be generated following these instructions [github docs](https://docs.github.com/en/repositories/releasing-projects-on-github/automatically-generated-release-notes)
+
+
+  *IMPORTANT: regardless of which branching strategy is being used, in order to keep our repos and our versioning more clear & better organized branch names should always correlate to a label used in the [`release.yml`](#step-2) file and that same label should be attatched to the PR for that branch. For example: `feature/hp-hero`*
+
 
 ## [Semantic Versioning](https://semver.org/)
 
